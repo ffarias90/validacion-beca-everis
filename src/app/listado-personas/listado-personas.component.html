@@ -1,0 +1,13 @@
+<!-- <div *ngIf="listado">
+    {{ listado }}
+</div> -->
+
+<!-- <ul>
+    <li *ngFor="let obj of listado">{{obj | json}}</li>
+</ul> -->
+
+<ul>
+    <li *ngFor="let item of listado">
+        <a routerLink="persona/{{item.id}}"><button>{{item.nombre + " " + item.apellido}}</button></a>
+    </li>
+</ul>
